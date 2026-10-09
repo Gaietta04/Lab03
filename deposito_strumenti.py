@@ -40,7 +40,7 @@ class DepositoStrumenti:
     def aggiungi_strumento(self, tipo, marca, anno_acquisto, valore):
         """Aggiunge uno strumento nel deposito: aggiunge solo nel sistema e non aggiorna il file"""
         numero = 0
-        for strumento in self.stumenti:
+        for strumento in self.strumenti:
             codice_numero = int(strumento.codice[1:])
             if codice_numero > numero:
                 numero = codice_numero
